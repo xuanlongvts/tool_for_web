@@ -11,9 +11,14 @@
             border: 1px solid #ccc;
         }
     </style>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
 </head>
 <body>
     <p onClick="makeGreen();" class="" >Nong No</p>
+    <a href="javascript:;" id="google">Google</a>
     <script>
         var dogs = [
             {
@@ -91,7 +96,15 @@
             console.log('data: ', data);
         });
 
-        
+        $(document).ready(function(){
+            $('#google').click(function(){
+                clickTest();
+            })
+        });
+
+        function clickTest(){
+            console.log('clickTest')
+        }
     </script>
 </body>
 </html>
